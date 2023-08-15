@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  max-width: 1080px;
+  align-items: center;
+} */
+
+::selection {
+  color: red;
+}
+
+.main {
+  margin: 20px 100px 0px 100px;
+}
+
+.logo {
+  color: #333;
+  font-family: Inconsolata;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.12rem;
+  text-transform: uppercase;
+}
+
+.hero {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+  margin-right: 50px;
+}
+
+.hero-img img {
+  width: 500px;
+  height: 500px;
+}
+
+.hero-text {
+  width: 600px;
+}
+
+.title {
+  color: var(--gray-1, #333);
+  font-family: Space Mono;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.14rem;
+  margin-bottom: 20px;
+}
+
+.detail {
+  color: var(--gray-2, #4f4f4f);
+  font-family: Space Mono;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.0525rem;
+  padding-right: 215px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffff;
+  text-transform: uppercase;
+  width: 13.5rem;
+  height: 4.25rem;
+  background: var(--gray-1, #333);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 400px) {
+  .main {
+    margin: 20px;
+  }
+
+  .hero {
+    display: block;
+  }
+
+  .hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .hero-img img {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+
+  .hero-text {
+    width: 350px;
+  }
+
+  .title {
+    align-items: center;
+    font-size: 3rem;
+    padding-right: 10px;
+  }
+
+  .detail {
+    font-size: 1.125rem;
+    padding-right: 53px;
+    letter-spacing: -0.03938rem;
+  }
+}
