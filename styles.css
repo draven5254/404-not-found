@@ -83,6 +83,7 @@
   width: 13.5rem;
   height: 4.25rem;
   background: var(--gray-1, #333);
+  border-radius: 10px;
   cursor: pointer;
   flex-shrink: 0;
 }
